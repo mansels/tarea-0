@@ -1,4 +1,4 @@
-# html
+# Se Recomienda el uso de sublime text 3
 Anderson necesita aprender html
 
 Y Este repositorio servira para que pueda tener codigo html para llevar.
