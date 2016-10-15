@@ -1,13 +1,51 @@
 <!DOCTYPE html>
+<!--
+El Doctype ayuda a identificar que clase de documento es
+XML es muy usado, incluso Microsoft Office Word utiliza xml
+-->
   <head>
+    <!-- 
+    Aqui se importan scripts y se configura la pagina como tal 
+    Lo primero que se debe de colocar son los tag META
+    Contienen informacion descriptiva acerca de la pagina, para humanos y maquinas
 
-    <!-- Aqui se importan scripts y se configura la pagina como tal -->
+    Se declara la codificacion a usar
+    UTF-8 es bien completa, pero no lo tiene todo, sirve el 90% de los casos
+    -->
+    <meta charset="utf-8">
+    <!-- gmail usa estas tags
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="application-name" content="Gmail">
+    <meta name="description" content="Google&#39;s approach to email">
+    <meta name="application-url" content="https://mail.google.com/mail/u/0">
+    <meta name="google" content="notranslate">
+    -->
+
+    <!--
+    Tags para SEO.
+    Keywords: Entre mas palabras mejor. bien definidas
+    Description: Muestra un pequeño repaso de la pagina
+    -->
+    <meta name="Keywords" content="Pagina, prueba, anderson, aprender, html">
+    <meta name="Description" content="Primera pagina montada en github para la enseñanza de html">
+    <!-- Tag meta de ejemplo de la pagina de facebook, interesante
+    Lo utiliza para comunicarse con su aplicacion movil
+    <meta property="al:android:app_name" content="Facebook" />
+	<meta property="al:android:package" content="com.facebook.katana" />
+	<meta property="al:android:url" content="fb://group/189953291405124" />
+	<meta property="al:ios:app_name" content="Facebook" />
+	<meta property="al:ios:app_store_id" content="284882215" />
+	<meta property="al:ios:url" content="fb://group/?id=189953291405124" />
+	-->
 
     <!-- el script, se importa con el parametro src -->
     <script scr="miscript.js"></script>
 
-    <!-- la hoja de estilos se linkea, ya que va en linea (inline, no online) -->
-    <!--  con el HTML -->
+    <!--
+    la hoja de estilos se linkea, ya que va en linea (inline, no online)
+    con el HTML 
+    -->
     <link rel="stylesheet" href="estilo.css">
 
     <!-- titulo para la barra, o pestaña, segun sea el caso -->
@@ -16,8 +54,10 @@
   </head>
   <body>
 
-    <!-- Antes de cerrar el body, si el javascript no esta en un archivo .js -->
-    <!-- importado en el head, se escribe todo el codigo javascript -->
+    <!-- 
+    Antes de cerrar el body, si el javascript no esta en un archivo .js
+    importado en el head, se escribe todo el codigo javascript
+    -->
 
     <script>
 
