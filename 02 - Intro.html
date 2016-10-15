@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<!--
-El Doctype ayuda a identificar que clase de documento es
-XML es muy usado, incluso Microsoft Office Word utiliza xml
--->
   <head>
-    <!-- 
-    Aqui se importan scripts y se configura la pagina como tal 
-    Lo primero que se debe de colocar son los tag META
-    Contienen informacion descriptiva acerca de la pagina, para humanos y maquinas
-
+    <!--
     Se declara la codificacion a usar (solo HTML5)
-    para HTML ver mas abajo
-    UTF-8 es bien completa, pero no lo tiene todo, sirve el 90% de los casos
+    para HTML 4 ver mas abajo
     -->
+    <!-- TODO: Preguntar ¿que es utf-8? -->
     <meta charset="utf-8">
-    <!-- gmail usa estas tags
-    Charset para html4
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    Compatibilidad con Microsoft Edge
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    mas tags.
-    <meta name="application-name" content="Gmail">
-    <meta name="description" content="Google&#39;s approach to email">
-    <meta name="application-url" content="https://mail.google.com/mail/u/0">
-    tag personalizado, privado, interno, yo lo pongo.
-    <meta name="google" content="notranslate">
-    -->
+    
+    <!--   TAGS DE EJEMPLO USADOS POR GMAIL -->
+
+    <!-- Charset para html4 -->
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+    
+    <!-- Compatibilidad con Microsoft Edge -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    
+    <!-- Mas tags -->
+    <!-- <meta name="application-name" content="Gmail"> -->
+    <!-- <meta name="description" content="Google&#39;s approach to email"> -->
+    <!-- <meta name="application-url" content="https://mail.google.com/mail/u/0"> -->
+    <!-- <meta name="google" content="notranslate"> -->
 
     <!--
     Tags para SEO.
@@ -36,7 +30,9 @@ XML es muy usado, incluso Microsoft Office Word utiliza xml
     <meta name="Keywords" content="Pagina, prueba, anderson, aprender, html">
     <meta name="Description" content="Primera pagina montada en github para la enseñanza de html">
     <meta namme="Author" content="Javier Mejias">
-    <!-- Tag meta de ejemplo de la pagina de facebook, interesante
+    
+    <!-- TAGS DE EJEMPLO USADOS POR FACEBOOK -->
+    <!--
     Lo utiliza para comunicarse con su aplicacion movil
     <meta property="al:android:app_name" content="Facebook" />
     <meta property="al:android:package" content="com.facebook.katana" />
@@ -46,17 +42,18 @@ XML es muy usado, incluso Microsoft Office Word utiliza xml
     <meta property="al:ios:url" content="fb://group/?id=189953291405124" />
     -->
 
-    <!-- el script, se importa con el parametro src -->
-    <script scr="miscript.js"></script>
+    <script>alert("Soy Javascript y me ejecuto desde el Head");</script>
 
-    <!--
-    la hoja de estilos se linkea, ya que va en linea (inline, no online)
-    con el HTML 
-    -->
-    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .Resumen {}
+        .Resumen p {color: Goldenrod;}
+        .Resumen li:hover {color: red;}
+        .dinamica tr:hover {color:blue;}
+        .dinamica td:hover {color: green;}
+        .Inventario {}
+    </style>
 
-    <!-- titulo para la barra, o pestaña, segun sea el caso -->
-    <title>Pagina de Prueba</title>
+    <title>Pagina de Prueba 2: Introduccion a HTML</title>
 
   </head>
   <body>
@@ -77,76 +74,25 @@ XML es muy usado, incluso Microsoft Office Word utiliza xml
     </div>
     
     <div class="inventario">
-    <table>
-        <tr>
-            <th>tag</th>
-            <th>nombre</th>
-            <th>descripcion</th>
-        
-        </tr>
-        <tr>
-            <td>&lt;!DOCTYPE&gt;</td><td>Doctype</td><td>Declarar el tipo de documento</td>
-        </tr>
-        <tr>
-            <td>&lt;HEAD&gt;</td><td>Head</td><td>Configurar la pagina / importar scripts</td>
-        </tr>
-        <tr>
-            <td>&lt;META&gt;</td><td>Meta</td><td>Declarar varios atributos</td>
-        </tr>
-        <tr>
-            <td>&lt;SCRIPT&gt;</td><td>Script</td><td>Importar o definir codigo script</td>
-        </tr>
-        <tr>
-            <td>&lt;LINK&gt;</td><td>Link</td><td>De momento solo para importar css</td>
-        </tr>
-        <tr>
-            <td>&lt;TITLE&gt;</td><td>Title</td><td>Declarar el titulo de la pagina</td>
-        </tr>
-        <tr>
-            <td>&lt;BODY&gt;</td><td>Body</td><td>Cuerpo del documento, respuesta del servidor</td>
-        </tr>
-        <tr>
-            <td>&lt;DIV&gt;</td><td>Div</td><td>Representa una porcion del documento</td>
-        </tr>
-        <tr>
-            <td>&lt;P&gt;</td>Paragraph<td>Parrafos de texto</td>
-        </tr>
-        <tr>
-            <td>&lt;UL&gt;</td><td>Unordered List</td><td>Lista sin orden especifico</td>
-        </tr>
-        <tr>
-            <td>&lt;LI&gt;</td><td>List Item</td><td>Elemento de una lista</td>
-        </tr>
-        <tr>
-            <td>&lt;TABLE&gt;</td><td>Table</td><td>Una Tabla</td>
-        </tr>
-        <tr>
-            <td>&lt;TR&gt;</td><td>Table Row</td><td>Una fila</td>
-        </tr>
-        <tr>
-            <td>&lt;TH&gt;</td><td>Table Header</td><td>Un Titulo de Columna (Encabezado)</td>
-        </tr>
-        <tr>
-            <td>&lt;TD&gt;</td>Table Data<td></td><td>Celda con datos</td>
-        </tr>
-    </table>
+        <table class="dinamica">
+            <tr><th>tag</th><th>nombre</th><th>descripcion</th></tr>
+            <tr><td>&lt;!DOCTYPE&gt;</td><td>Doctype</td><td>Declarar el tipo de documento</td></tr>
+            <tr><td>&lt;HEAD&gt;</td><td>Head</td><td>Configurar la pagina / importar scripts</td></tr>
+            <tr><td>&lt;META&gt;</td><td>Meta</td><td>Declarar varios atributos</td></tr>
+            <tr><td>&lt;SCRIPT&gt;</td><td>Script</td><td>Importar o definir codigo script</td></tr>
+            <tr><td>&lt;LINK&gt;</td><td>Link</td><td>De momento solo para importar css</td></tr>
+            <tr><td>&lt;TITLE&gt;</td><td>Title</td><td>Declarar el titulo de la pagina</td></tr>
+            <tr><td>&lt;BODY&gt;</td><td>Body</td><td>Cuerpo del documento, respuesta del servidor</td></tr>
+            <tr><td>&lt;DIV&gt;</td><td>Div</td><td>Representa una porcion del documento</td></tr>
+            <tr><td>&lt;P&gt;</td><td>Paragraph</td><td>Parrafos de texto</td></tr>
+            <tr><td>&lt;UL&gt;</td><td>Unordered List</td><td>Lista sin orden especifico</td></tr>
+            <tr><td>&lt;LI&gt;</td><td>List Item</td><td>Elemento de una lista</td></tr>
+            <tr><td>&lt;TABLE&gt;</td><td>Table</td><td>Una Tabla</td></tr>
+            <tr><td>&lt;TR&gt;</td><td>Table Row</td><td>Una fila</td></tr>
+            <tr><td>&lt;TH&gt;</td><td>Table Header</td><td>Un Titulo de Columna (Encabezado)</td></tr>
+            <tr><td>&lt;TD&gt;</td><td>Table Data</td><td>Celda con datos</td></tr>
+        </table>
     </div>
 
-    <!-- 
-    Antes de cerrar el body, si el javascript no esta en un archivo .js
-    importado en el head, se escribe todo el codigo javascript
-    -->
-
-    <script>
-
-      /*
-      En HTML 5, el lenguaje de script por defecto es Javascript
-      Pero este documento no posee doctype declarado, mas adelante
-      */
-
-      // Funcion alert, bastante util para imprimir variables
-      alert("Hola Anderson");
-
-    </script>
   </body>
 </html>
