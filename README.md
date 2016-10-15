@@ -20,4 +20,3 @@ TODO: Significa To-do, para hacer, implica postponer una tarea a futuro.
 Es muy usada para definir una parte del codigo que necesita edicion.
 Son tareas que te dejo. Cumplelas.
 
-# Saludos a Rulos
