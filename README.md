@@ -16,6 +16,6 @@ Y Este repositorio servira para que pueda tener codigo html para llevar.
 10 -  
 
 #Aclaracion
-TODO: Significa To-do, para hacer, implica postponer una tarea a futuro.
+TODO: Significa To-do, para hacer, implica postponer una tarea a futuro.  
 Es muy usada para definir una parte del codigo que necesita edicion.
 Son tareas que te dejo. Cumplelas.
